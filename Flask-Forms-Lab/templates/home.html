@@ -12,15 +12,19 @@
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="#">Adele</a></li>
-  <li><a href="#">Agnes</a></li>
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-  <li><a href="#">Loai</a></li>
+  <li><a href="https://www.y8.com/">Adele</a></li>
+  <li><a href="https://www.friv.com/">Agnes</a></li>
+  <li><a href="https://www.y8.com/">Billy</a></li>
+  <li><a href="https://www.y8.com/">Bob</a></li>
+  <li><a href="https://www.y8.com/">Calvin</a></li>
+  <li><a href="https://www.y8.com/">Christina</a></li>
+  <li><a href="https://www.y8.com/">Cindy</a></li>
+  <li><a href="https://www.y8.com/">Loai</a></li>
 </ul>
+
+{%for facebook_friend in facebook_friends%}
+<li>{{facebook_friend}}</li>
+{%endfor%}
 
 <script>
 function myFunction() {
@@ -40,6 +44,8 @@ function myFunction() {
     }
 }
 </script>
+
+
 
 </body>
 </html>
